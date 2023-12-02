@@ -29,14 +29,14 @@ pub fn solve_a() {
         ]
     );
 
-    'main_loop: for line in file_reader::read_file_lines("input_data/day2/day2.in") {
+    'iterate_lines: for line in file_reader::read_file_lines("input_data/day2/day2.in") {
         let (game_id, game_data) = game_data_parser(line.as_str());
 
         for color_data in game_data.split([';', ',']) {
             let (color, count) = color_parser(color_data);
 
             if count > color_max[color] {
-                continue 'main_loop
+                continue 'iterate_lines
             }
         }
 
