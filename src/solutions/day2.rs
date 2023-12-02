@@ -29,23 +29,18 @@ pub fn solve_a() {
         ]
     );
 
-    for line in file_reader::read_file_lines("input_data/day2/day2.in") {
+    'main_loop: for line in file_reader::read_file_lines("input_data/day2/day2.in") {
         let (game_id, game_data) = game_data_parser(line.as_str());
-
-        let mut game_possible = true;
 
         for color_data in game_data.split([';', ',']) {
             let (color, count) = color_parser(color_data);
 
             if count > color_max[color] {
-                game_possible = false;
-                break
+                continue 'main_loop
             }
         }
 
-        if game_possible {
-            id_sum += game_id
-        }
+        id_sum += game_id
     }
 
     println!("{}", id_sum)
