@@ -8,4 +8,7 @@ pub fn main() {
     println!("Day2: ");
     solutions::day2::solve_a();
     solutions::day2::solve_b();
+    println!("Day3: ");
+    solutions::day3::solve_a();
+    solutions::day3::solve_b();
 }
