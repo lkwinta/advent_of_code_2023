@@ -43,8 +43,8 @@ pub fn solve_b(){
         let wining_values_set : HashSet<i32> = HashSet::from_iter(wining_values);
         let card_score = your_values.iter().filter(|i| wining_values_set.contains(*i)).count() as i32;
 
-        cards_map.insert(card_id, cards_map.get(&card_id).unwrap_or_else(|| &0) + 1);
-        let current_card_count = *cards_map.get(&card_id).unwrap();
+        let current_card_count = cards_map.get(&card_id).unwrap_or_else(|| &0) + 1;
+        cards_map.insert(card_id, current_card_count);
 
         for i in (card_id + 1)..(card_id + card_score + 1) {
             cards_map.insert(i, cards_map.get(&i).unwrap_or_else(|| &0) + current_card_count);
