@@ -17,4 +17,17 @@ pub fn main() {
     println!("Day5: ");
     solutions::day5::solve_a();
     solutions::day5::solve_b();
+    println!("Day6: ");
+    solutions::day6::solve_a();
+    solutions::day6::solve_b();
+    //println!("Day7: ");
+    solutions::day7::solve_a();
+    solutions::day7::solve_b();
+    //println!("Day8: ");
+    solutions::day8::solve_a();
+    solutions::day8::solve_b();
+    //println!("Day9: ");
+    solutions::day9::solve_a();
+    solutions::day9::solve_b();
+
 }
