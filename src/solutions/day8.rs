@@ -1,6 +1,5 @@
 use crate::file_reader;
 use std::collections::HashMap;
-use std::path::Component::ParentDir;
 
 pub fn solve_a() {
     let lines = file_reader::read_file_lines("input_data/day8/day8.in");
