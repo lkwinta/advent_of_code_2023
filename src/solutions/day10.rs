@@ -12,10 +12,6 @@ pub enum Pipe {
     DownRight = b'F',
     StartPipe = b'S',
 
-    LoopPipe = b'*',
-    InsideLoop = b'I',
-    OutsideLoop = b'O',
-
     NoPath = b'.'
 }
 impl Into<char> for Pipe {
