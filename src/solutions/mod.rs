@@ -8,3 +8,4 @@ pub mod day7a;
 pub mod day7b;
 pub mod day8;
 pub mod day9;
+pub mod day10;
