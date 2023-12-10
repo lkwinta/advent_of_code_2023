@@ -158,7 +158,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let mut map = parse_map(file_reader::read_file_lines("input_data/day10/day10.in"));
+    let map = parse_map(file_reader::read_file_lines("input_data/day10/day10.in"));
 
     let (y_start, x_start) = find_start_point(&map);
     let mut visited_coords: HashMap<(usize, usize), Pipe> = HashMap::new();
@@ -200,7 +200,6 @@ pub fn solve_b() {
                 }
             }
             else if should_count {
-                map[y][x] = Pipe::InsideLoop;
                 area_temp += 1
             }
         }
