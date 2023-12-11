@@ -32,4 +32,6 @@ pub fn main() {
     println!("Day10: ");
     solutions::day10::solve_a();
     solutions::day10::solve_b();
+    println!("Day11: ");
+    solutions::day11::solve();
 }
