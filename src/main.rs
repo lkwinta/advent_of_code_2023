@@ -34,4 +34,7 @@ pub fn main() {
     solutions::day10::solve_b();
     println!("Day11: ");
     solutions::day11::solve();
+    println!("Day12: ");
+    //solutions::day12::solve_a();
+    //solutions::day12::solve_b();
 }
